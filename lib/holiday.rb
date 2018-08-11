@@ -70,17 +70,17 @@ def all_supplies_in_holidays(holiday_hash)
   #   Fourth Of July: Fireworks, BBQ
   # etc.
   
-  holiday_hash.each do |key, value|
+  holiday_hash.each do |season_key, value|
     
-    holiday_string = key.to_s.split
+    season_string = season_key.to_s.capitalize!
     
-    skey.each do |word|
-      skey = word.capitalize!
-    end
+    puts "#{season_string}:"
     
-    puts "#{skey.capitalize}:"
-    
-    value.each do |second_key, second_value|
+    value.each do |holiday_key, second_value|
+      
+      holiday_string = holiday_key.to_s
+      
+      holiday_array = holiday_string.split('_')
       
       skey2 = second_key.to_s.split('_')
       
