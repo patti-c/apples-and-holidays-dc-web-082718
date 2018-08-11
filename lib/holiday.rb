@@ -82,16 +82,13 @@ def all_supplies_in_holidays(holiday_hash)
       
       holiday_array = holiday_string.split('_')
       
-      skey2 = second_key.to_s.split('_')
-      
-      binding.pry
-      
-      skey2.each do |word|
-        skey2 = word.capitalize!
+      holiday_array.each do |word|
+         word.capitalize!
       end 
       
+      holiday_array.join(' ')
       
-      puts "  #{skey2}: #{second_value.join(", ")}"
+      puts "  #{holiday_key}: #{second_value.join(", ")}"
       
     end 
   end 
