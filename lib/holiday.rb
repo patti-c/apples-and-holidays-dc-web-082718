@@ -101,7 +101,14 @@ def all_holidays_with_bbq(holiday_hash)
   
   holiday_hash.each do |season_key, value|
     
+    # Next we will iterate across the holidays themselves
     
+    value.each do |holiday_key, supplies|
+      
+      # Finally, we will iterate across the supplies
+      # Looking for BBQ materials
+      
+      
     
   end 
   
