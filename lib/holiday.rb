@@ -97,6 +97,10 @@ end
 
 def all_holidays_with_bbq(holiday_hash)
   
+  # This is a fun tool that will help us later
+  
+  bbq_array = []
+  
   # We start by iterating across the seasons 
   
   holiday_hash.each do |season_key, value|
@@ -108,7 +112,9 @@ def all_holidays_with_bbq(holiday_hash)
       # Finally, we will iterate across the supplies
       # Looking for BBQ materials
       
-      
+      supplies.each do |supply|
+        if supply == "BBQ"
+          holiday_key << bbq_array
     
   end 
   
